@@ -1,0 +1,545 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycolor: #fff9f4;
+    --secondrycolor: #E5E5E5;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("./fonts/BebasNeue-Regular.ttf");
+}
+
+.bar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff9f4;
+    box-shadow: 0 .5rew 1rew rgba(0, 0, 0, .15) !important
+}
+
+.logo {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.logo span {
+    width: 100px;
+    font-family: Roboto;
+}
+
+.nike {
+    width: 300px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 60px;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .55);
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+#niketext {
+    color: #ff8367;
+}
+
+/* hero section start */
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    background-color: #fff9f4;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.bigshoe {
+    width: 40%;
+}
+
+.bigshoe img {
+    width: 100%;
+}
+
+.hero h1 {
+    font-family: Bebas;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.hero #first {
+    color: #ff8367;
+
+}
+
+.hero #second {
+    color: #363958;
+
+}
+
+.hero p {
+    color: #212529;
+    font-family: Roboto;
+}
+
+.hero button {
+    outline: none;
+    border: none;
+    background: transparent;
+    background-color: rgb(61, 79, 243);
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+    width: 30%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* casual shoe section start */
+.casual {
+    width: 100%;
+    background-color: var(--secondrycolor);
+    padding: 55px 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.casual .heading {
+    padding-left: 10%;
+}
+
+.casual h1 {
+    font-family: Bebas;
+    color: #363958;
+
+}
+
+.casual .shoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.casual .shoe {
+    width: 25%;
+    background-color: white;
+    padding: 12px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.casual .shoe img {
+    width: 100%;
+    background-color: #F1F1F1;
+}
+
+.casual h2 {
+    font-family: Roboto;
+    color: #363958;
+}
+
+.casual .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.casual p {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.casual .dollar {
+    display: flex;
+    justify-content: space-between;
+    color: #ff8367;
+}
+
+.casual button {
+    outline: none;
+    border: none;
+    background: transparent;
+    background-color: rgb(61, 79, 243);
+    color: white;
+    border-radius: 3px;
+    width: 30%;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* casual shoe section end */
+/* shopping */
+.shopping {
+    width: 100%;
+    background-color: var(--secondrycolor);
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px;
+    gap: 30px;
+}
+
+.shopping .content {
+    width: 40%;
+}
+
+.shopping .shoppingimg {
+    width: 50%;
+}
+
+.shopping .shoppingimg img {
+    width: 100%;
+}
+
+.shopping .box {
+    display: flex;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+.shopping .content {
+    width: 50%;
+}
+
+.shopping .houseimg {
+    width: 20%;
+}
+
+.shopping .houseimg img {
+    width: 100%;
+}
+
+.boxes {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boxes .box {
+    width: 100%;
+}
+
+/* shopping end */
+/* footer section start */
+#section4 {
+    background-color: #E5E5E5;
+    padding: 10px 70px 50px;
+}
+
+#section4>div {
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 30px 0 50px;
+}
+
+#section4>div>h2 {
+    padding-bottom: 45px;
+}
+
+#section4>div>input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 0.24rem;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: medium;
+}
+
+#section4>div>button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 12px;
+    width: 100px;
+    font-size: medium;
+}
+#section5 {
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#section5>main {
+    display: flex;
+    width: 100%;
+}
+
+#section5>main>div {
+    width: 50%;
+}
+
+#section5>main>div>h3 {
+    padding: 15px 0;
+    font-weight: 1000;
+}
+
+#section5>main>div>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#section5>p {
+    padding: 50px 0 0;
+}
+#section5 .color{
+   color:  #ff8367;
+}
+/* HOVER */
+
+button:hover {
+    cursor: pointer;
+    border-color: #0a58ca;
+}
+
+button:focus {
+    background-color: #0b5ed7;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+input:focus {
+    border-color: rgb(161, 194, 240);
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.3);
+    outline: none;
+}
+
+.green:hover {
+    cursor: pointer;
+    background-color: rgb(20, 111, 69);
+    border-color: rgb(20, 111, 69);
+}
+
+.green:focus {
+    box-shadow: 0 0 0 0.25rem rgba(20, 111, 69, 0.5);
+    background-color: rgb(20, 111, 69);
+    border-color: rgb(20, 111, 69);
+}
+
+ul:hover {
+    cursor: pointer;
+}
+/* footer section end  */
+
+
+
+
+@media screen and (max-width:480px) {
+    .navlinks {
+        display: none;
+    }
+
+    .bar {
+        display: block !important;
+    }
+
+    .logo {
+        width: 183px;
+    }
+
+    .bigshoe {
+        width: 100%;
+    }
+
+    .bigshoe img {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 10px 30px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero button {
+        width: 50%;
+    }
+
+    /* casual */
+    .casual .shoes {
+        flex-direction: column;
+    }
+
+    .casual .shoe {
+        width: 100%;
+    }
+
+    .casual {
+        padding: 55px 29px;
+    }
+
+    .shopping {
+        flex-direction: column;
+
+    }
+
+    .shoppingimg {
+        order: -1;
+
+    }
+
+    .shopping .shoppingimg {
+        width: 100%;
+    }
+
+    .shopping .boxes {
+        width: 100%;
+    }
+ #section4 {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    #section4>div {
+        width: 100%;
+    }
+
+    #section4>div>input {
+        width: 55%;
+    }
+      #section5 {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    #section5>main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #section5>p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (min-width:481px)and (max-width:768px) {
+
+    /* casual */
+    .casual .shoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .casual .shoe {
+        width: 80%;
+    }
+
+    .casual {
+        padding: 55px 29px;
+    }
+
+    .shopping {
+        flex-direction: column;
+
+    }
+
+    .shoppingimg {
+        order: -1;
+
+    }
+
+    .shopping .shoppingimg {
+        width: 100%;
+    }
+
+    .shopping .boxes {
+        width: 100%;
+    }
+    #section4 {
+        width: 100%;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section4>div {
+        width: 80%;
+    }
+
+    #section4>div>input {
+        width: 55%;
+    }
+      #section5 {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    #section5>main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #section5>p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+    }
+}
